@@ -23,7 +23,7 @@ function setup() {
 function draw() {
   c=random(0,255)
   tint(255,c);
-  cloudW=random(50,150);
+  cloudW=random(50,500);
   cloudH = random(50,150);
   randomNumber=random(0,100);
   if (mouseIsPressed){
