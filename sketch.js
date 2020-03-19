@@ -23,8 +23,8 @@ function setup() {
 function draw() {
   c=random(0,255)
   tint(255,c);
-  cloudW=random(50,500);
-  cloudH = random(50,150);
+  cloudW=random(30,75);
+  cloudH = random(30,75);
   randomNumber=random(0,100);
   if (mouseIsPressed){
   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
