@@ -2,6 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   background-color:#009bff;
+  font-family: Object Sans;
+  color: #FFF;
 }
 canvas {
   display: block;
