@@ -39,7 +39,7 @@ function draw() {
   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
   //itt kéne, hogy a felhok közül random válasszon
 }
-  if (keyIsDown(e)) { 
+  if (keyIsDown('e')) { 
       c=255;
       image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
   }
