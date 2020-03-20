@@ -43,4 +43,4 @@ image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
 
 //function mouseIsPressed(){
 //  image(felho1, mouseX, mouseY, cloudW, cloudH);
-//}
+}
