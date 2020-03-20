@@ -1,5 +1,7 @@
 let felho1;
 let felho2;
+let felho1blue;
+let felho2blue;
 let cloudW;
 let cloudH;
 let randomNumber;
@@ -12,6 +14,8 @@ cloud=[felho1,felho2];
 function preload(){
 felho1=loadImage('cloud_1.png');
 felho2=loadImage('cloud_2.png');
+felho1blue=loadImage('cloud_1_blue.png');
+felho2blue=loadImage('cloud_2_blue.png');
 }
 
 function setup() {
@@ -33,6 +37,8 @@ function draw() {
   if (mouseIsPressed){
   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
 }
+    if (keyPressed) { 
+image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
   }
 
 //function mouseIsPressed(){
