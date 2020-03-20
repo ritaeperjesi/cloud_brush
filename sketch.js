@@ -38,8 +38,8 @@ function draw() {
   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
 }
     if (keyIsPressed) { 
-      tint(0,155,255);
-      image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+      c=100;
+      image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
   }
 
 //function mouseIsPressed(){
