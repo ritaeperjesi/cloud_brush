@@ -37,9 +37,9 @@ function draw() {
   if (mouseIsPressed){
   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
 }
-    if (keyIsPressed) { 
+    if (keyIsPressed && mouseIsPressed) { 
       c=255;
-      image(felho1blue, mouseX-1, mouseY-1, cloudW, cloudH);
+      image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
   }
 
 //function mouseIsPressed(){
