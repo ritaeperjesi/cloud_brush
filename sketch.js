@@ -36,7 +36,7 @@ function draw() {
   randomNumber=random(0,100);
 
   if (mouseIsPressed){
-  image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+  image(felho1, mouseX, mouseY, cloudW, cloudH);
   //itt kéne, hogy a felhok közül random válasszon
 }
   if (keyIsPressed) { 
