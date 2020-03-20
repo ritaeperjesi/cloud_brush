@@ -19,7 +19,7 @@ function setup() {
   background(0,155,255);
   stroke(255);
   strokeWeight(3);
-  fill(0,155,255,0);
+  fill(0,155,255);
   rect (0,0,800,800);
   
 }
