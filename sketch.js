@@ -35,7 +35,7 @@ function draw() {
   cloudH = random(30,75);
   randomNumber=random(0,100);
   if (mouseIsPressed){
-  image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+  image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
 }
     if (keyIsPressed) { 
       c=255;
