@@ -17,6 +17,9 @@ felho2=loadImage('cloud_2.png');
 function setup() {
   createCanvas(800, 800);
   background(0,155,255);
+  stroke(0);
+  strokeWeight(3);
+  rect (0,0,800,800);
   
 }
 
