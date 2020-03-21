@@ -1,11 +1,11 @@
-html, body {
+html, canvas {
+  display: block;
+}
+body {
   margin-left: 20px;
   background-color:#009bff;
   font-family: Helvetica;
   color: #FFF;
-}
-canvas {
-  display: block;
 }
 
 
