@@ -10,6 +10,14 @@ let c;
 let cloud;
 cloud=[felho1,felho2];
 
+// uploadcare eleje
+var widget = uploadcare.Widget('[role=uploadcare-uploader]');
+widget.onUploadComplete(function (fileInfo) {
+  console.log('File name: ', fileInfo.name);
+  console.log('CDN URL: ', fileInfo.cdnUrl);
+  // and so on...
+});
+//uploadcare vége
 
 function preload(){
 felho1=loadImage('cloud_1.png');
