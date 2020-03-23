@@ -12,14 +12,47 @@
     <h1>the Cloud Factory</h1>
     <p> hey! draw a cloud here. If you are done, scroll down to browse the sky.</p>
     <p>Press any key to turn into eraser mode. You have to press the key, but not the mousebutton!</p>
-    <script src="sketch.js"></script>
-    <script src="p5.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
   <!--  <meta charset="utf-8"> -->
-
+  <!--Uploadcare-->
+  <script>
+    UPLOADCARE_PUBLIC_KEY = '9052bc6b7f51840531da';
+  </script>
+  
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  <style>
+    .uploader-button .uploadcare--widget__button_type_open {
+      background-color: #5882e7;
+    }
+  </style>
+  
+  <script>
+    UPLOADCARE_LOCALE_TRANSLATIONS = {
+      buttons: {
+        choose: {
+          files: {
+            one: 'Upload image'
+          }
+        }
+      }
+    }
+  </script>
+  <!--Uploadcare-->
   </head>
-      <body>   
+      <body>   <script src="sketch.js"></script>
+        <script src="p5.js"></script>
+        <script src="p5.sound.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+         <!--Uploadcare-->
+        <span class="uploader-button">
+          <input 
+            type="hidden"
+            role="uploadcare-uploader"
+            data-tabs="file" />
+        </span>
+        <!--Uploadcare-->
+
       </body>
           <footer>
           <!--honlapról másoltam-->
