@@ -44,8 +44,13 @@ function setup() {
   rect (0,0,windowWidth-40,windowHeight-40);
   cloudW = random(30,75);
   cloudH = random(30,75);
-  
 }
+
+function keyPressed() {
+  if (key === 's') {
+    saveCanvas(myDrawing, 'mySky', 'jpg');
+  } 
+  }
 
 function draw() {
   c=random(0,255)
@@ -101,9 +106,5 @@ if (mouseIsPressed){
 //  image(felho1, mouseX, mouseY, cloudW, cloudH);
 }
 
-function keyPressed() {
-  if (key === 's') {
-    saveCanvas(myDrawing, 'mySky', 'jpg');
-  } 
-  }
+
 }
