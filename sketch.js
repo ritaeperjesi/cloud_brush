@@ -7,7 +7,7 @@ let cloudH;
 let randomNumber;
 let alphaValue;
 let c;
-let cloud;
+let cloudArray;
 let myDrawing;
 
 let smallBrushH;
@@ -17,7 +17,7 @@ let middleBrushW;
 let bigBrushH;
 let bigBrushW;
 
-cloud=[felho1,felho2];
+
 
 // uploadcare eleje
 var widget = uploadcare.Widget('[role=uploadcare-uploader]');
@@ -45,6 +45,7 @@ function setup() {
   cloudW = random(30,75);
   cloudH = random(30,75);
   imageMode(CENTER);
+  cloudArray=[felho1,felho2];
 }
 
 function keyPressed() {
@@ -69,7 +70,7 @@ if (mouseIsPressed){
   if (key === 'd'){
   cloudW=middleBrushW;
   cloudH=middleBrushH;
-image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+image(cloudArray[1], mouseX+1, mouseY+1, cloudW, cloudH);
 }
   }
 
