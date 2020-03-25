@@ -8,6 +8,15 @@ let randomNumber;
 let alphaValue;
 let c;
 let cloud;
+let myDrawing;
+
+let smallBrushH;
+let smallBrushW;
+let middleBrushH;
+let middleBrushW;
+let bigBrushH;
+let bigBrushW;
+
 cloud=[felho1,felho2];
 
 // uploadcare eleje
@@ -27,12 +36,12 @@ felho2blue=loadImage('cloud_2_blue.png');
 }
 
 function setup() {
-  createCanvas(1300, 500);
+  createCanvas(windowWidth,windowHeight);
   background(0,155,255);
   stroke(255);
   strokeWeight(3);
   fill(0,155,255);
-  rect (0,0,1300,500);
+  rect (0,0,windowWidth,windowHeight);
   
 }
 
@@ -43,15 +52,50 @@ function draw() {
   cloudH = random(30,75);
   randomNumber=random(0,100);
 
-  if (mouseIsPressed){
-  image(felho1, mouseX, mouseY, cloudW, cloudH);
-  //itt kéne, hogy a felhok közül random válasszon
+if (mouseIsPressed){
+  if (key === 'd'){
+  cloudW=middleBrushW;
+  cloudH=middleBrushH;
+image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
 }
-  if (keyIsPressed) { 
-      c=255;
-      image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
   }
+if (mouseIsPressed){
+  if (key === 'e'){
+  image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
+  }
+
+if (mouseIsPressed){
+  if (key === '1'){
+ cloudW=smallBrushW;
+ cloudH=smallBrushH;
+ image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+ }
+  }
+
+if (mouseIsPressed){
+  if (key === '2'){
+ cloudW=middleBrushW;
+ cloudH=middleBrushH;
+ image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+ }
+  }
+
+if (mouseIsPressed){
+  if (key === '3'){
+  cloudW=bigBrushW;
+  cloudH=bigBrushH;
+  image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+  }
+   }
+
 
 //function mouseIsPressed(){
 //  image(felho1, mouseX, mouseY, cloudW, cloudH);
+}
+
+function keyPressed() {
+  if (key === 's') {
+    saveCanvas(myDrawing, 'mySky', 'jpg');
+  } 
+  }
 }
