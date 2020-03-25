@@ -1,7 +1,6 @@
 let felho1;
 let felho2;
 let felho3;
-let felho4;
 let felho1blue;
 let felho2blue;
 let cloudW;
@@ -35,7 +34,6 @@ function preload(){
 felho1=loadImage('cloud_1.png');
 felho2=loadImage('cloud_2.png');
 felho3=loadImage('cloud_3.png');
-felho4=loadImage('cloud_4.png');
 felho1blue=loadImage('cloud_1_blue.png');
 felho2blue=loadImage('cloud_2_blue.png');
 }
