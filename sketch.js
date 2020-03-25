@@ -2,8 +2,8 @@ let felho1;
 let felho2;
 let felho1blue;
 let felho2blue;
-let cloudW;
-let cloudH;
+let cloudW = random(30,75);
+let cloudH = random(30,75);
 let randomNumber;
 let alphaValue;
 let c;
@@ -36,14 +36,12 @@ felho2blue=loadImage('cloud_2_blue.png');
 }
 
 function setup() {
-  createCanvas(windowWidth-20,windowHeight-20);
+  createCanvas(windowWidth-40,windowHeight-40);
   background(0,155,255);
   stroke(255);
   strokeWeight(3);
   fill(0,155,255);
-  rect (0,0,windowWidth-20,windowHeight-20);
-  cloudW=random(30,75);
-  cloudH = random(30,75);
+  rect (0,0,windowWidth-40,windowHeight-40);
   
 }
 
@@ -65,10 +63,6 @@ if (mouseIsPressed){
   cloudH=middleBrushH;
 image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
 }
-  }
-if (mouseIsPressed){
-  if (key === 'e'){
-  image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
   }
 
 if (mouseIsPressed){
@@ -94,6 +88,11 @@ if (mouseIsPressed){
   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
   }
    }
+
+ if (mouseIsPressed){
+  if (key === 'e'){
+   image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
+  }
 
 
 //function mouseIsPressed(){
