@@ -52,6 +52,13 @@ function draw() {
   cloudH = random(30,75);
   randomNumber=random(0,100);
 
+smallBrushH=random(20,50);
+smallBrushW=random(20,50);
+middleBrushH=random(50,100);
+middleBrushW=random(50,100);
+bigBrushH=random(100,150);
+bigBrushW=random(100,150);
+
 if (mouseIsPressed){
   if (key === 'd'){
   cloudW=middleBrushW;
