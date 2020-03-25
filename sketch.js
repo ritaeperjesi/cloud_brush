@@ -33,9 +33,9 @@ widget.onUploadComplete(function (fileInfo) {
 
 function preload(){
 felho1=loadImage('cloud_1.png');
-felho2=loadImage('cloud_2.png');
-felho3=loadImage('cloud_3.png');
-felho4=loadImage('cloud_4.png');
+//felho2=loadImage('cloud_2.png');
+//felho3=loadImage('cloud_3.png');
+//felho4=loadImage('cloud_4.png');
 felho1blue=loadImage('cloud_1_blue.png');
 felho2blue=loadImage('cloud_2_blue.png');
 }
@@ -70,7 +70,8 @@ middleBrushH=random(50,100);
 middleBrushW=random(50,100);
 bigBrushH=random(100,150);
 bigBrushW=random(100,150);
-index=int(random(1,3));
+//index=int(random(0));
+index=0;
 
 if (mouseIsPressed){
   if (key === 'd'){
