@@ -1,5 +1,7 @@
 let felho1;
 let felho2;
+let felho3;
+let felho4;
 let felho1blue;
 let felho2blue;
 let cloudW;
@@ -32,6 +34,8 @@ widget.onUploadComplete(function (fileInfo) {
 function preload(){
 felho1=loadImage('cloud_1.png');
 felho2=loadImage('cloud_2.png');
+felho3=loadImage('cloud_3.png');
+felho4=loadImage('cloud_4.png');
 felho1blue=loadImage('cloud_1_blue.png');
 felho2blue=loadImage('cloud_2_blue.png');
 }
@@ -46,7 +50,7 @@ function setup() {
   cloudW = random(30,75);
   cloudH = random(30,75);
   imageMode(CENTER);
-  cloudArray=[felho1,felho2];
+  cloudArray=[felho1, felho2, felho3, felho4];
 }
 
 function keyPressed() {
@@ -66,7 +70,7 @@ middleBrushH=random(50,100);
 middleBrushW=random(50,100);
 bigBrushH=random(100,150);
 bigBrushW=random(100,150);
-index=int(random(0,1));
+index=int(random(0,3));
 
 if (mouseIsPressed){
   if (key === 'd'){
