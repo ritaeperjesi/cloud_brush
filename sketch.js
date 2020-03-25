@@ -36,7 +36,7 @@ felho2blue=loadImage('cloud_2_blue.png');
 }
 
 function setup() {
-  createCanvas(windowWidth-40,windowHeight-40);
+  myDrawing =createCanvas(windowWidth-40,windowHeight-40);
   background(0,155,255);
   stroke(255);
   strokeWeight(3);
