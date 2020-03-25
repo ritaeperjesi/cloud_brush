@@ -75,7 +75,7 @@ if (mouseIsPressed){
   cloudW=middleBrushW;
   cloudH=middleBrushH;
   
-image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
+image(cloudArray[0], mouseX+1, mouseY+1, cloudW, cloudH);
 }
   }
 
