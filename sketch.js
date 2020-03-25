@@ -44,6 +44,7 @@ function setup() {
   rect (0,0,windowWidth-40,windowHeight-40);
   cloudW = random(30,75);
   cloudH = random(30,75);
+  imageMode(CENTER);
 }
 
 function keyPressed() {
