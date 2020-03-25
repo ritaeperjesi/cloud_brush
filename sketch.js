@@ -70,7 +70,7 @@ middleBrushH=random(50,100);
 middleBrushW=random(50,100);
 bigBrushH=random(100,150);
 bigBrushW=random(100,150);
-index=int(random(0,3));
+index=int(random(1,3));
 
 if (mouseIsPressed){
   if (key === 'd'){
