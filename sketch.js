@@ -2,8 +2,8 @@ let felho1;
 let felho2;
 let felho1blue;
 let felho2blue;
-let cloudW = random(30,75);
-let cloudH = random(30,75);
+let cloudW;
+let cloudH;
 let randomNumber;
 let alphaValue;
 let c;
@@ -42,6 +42,8 @@ function setup() {
   strokeWeight(3);
   fill(0,155,255);
   rect (0,0,windowWidth-40,windowHeight-40);
+  cloudW = random(30,75);
+  cloudH = random(30,75);
   
 }
 
