@@ -73,9 +73,8 @@ index=int(random(1,2));
 if (mouseIsPressed){
   if (key === 'd'){
   cloudW=middleBrushW;
-  cloudH=middleBrushH;
-  
-image(cloudArray[0], mouseX+1, mouseY+1, cloudW, cloudH);
+  cloudH=middleBrushH; 
+  image(cloudArray[1], mouseX+1, mouseY+1, cloudW, cloudH);
 }
   }
 
