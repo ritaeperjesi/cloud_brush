@@ -66,12 +66,13 @@ middleBrushH=random(50,100);
 middleBrushW=random(50,100);
 bigBrushH=random(100,150);
 bigBrushW=random(100,150);
-index=random(0,cloudArray.length);
+
 
 if (mouseIsPressed){
   if (key === 'd'){
   cloudW=middleBrushW;
   cloudH=middleBrushH;
+  index=random(0,cloudArray.length);
 image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
 }
   }
