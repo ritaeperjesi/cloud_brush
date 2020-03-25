@@ -36,20 +36,20 @@ felho2blue=loadImage('cloud_2_blue.png');
 }
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth-20,windowHeight-20);
   background(0,155,255);
   stroke(255);
   strokeWeight(3);
   fill(0,155,255);
-  rect (0,0,windowWidth,windowHeight);
+  rect (0,0,windowWidth-20,windowHeight-20);
+  cloudW=random(30,75);
+  cloudH = random(30,75);
   
 }
 
 function draw() {
   c=random(0,255)
   tint(255,c);
-  cloudW=random(30,75);
-  cloudH = random(30,75);
   randomNumber=random(0,100);
 
 smallBrushH=random(20,50);
