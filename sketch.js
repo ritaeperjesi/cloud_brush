@@ -1,6 +1,7 @@
 let felho1;
 let felho2;
 let felho3;
+let felho4;
 let felho1blue;
 let felho2blue;
 let cloudW;
@@ -34,6 +35,7 @@ function preload(){
 felho1=loadImage('cloud_1.png');
 felho2=loadImage('cloud_2.png');
 felho3=loadImage('cloud_3.png');
+felho4=loadImage('cloud_4.png');
 felho1blue=loadImage('cloud_1_blue.png');
 felho2blue=loadImage('cloud_2_blue.png');
 }
@@ -68,13 +70,14 @@ middleBrushH=random(50,100);
 middleBrushW=random(50,100);
 bigBrushH=random(100,150);
 bigBrushW=random(100,150);
-index=int(random(1,2));
+index=int(random(1,3));
 
 if (mouseIsPressed){
   if (key === 'd'){
   cloudW=middleBrushW;
-  cloudH=middleBrushH; 
-  image(cloudArray[1], mouseX+1, mouseY+1, cloudW, cloudH);
+  cloudH=middleBrushH;
+  
+image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
 }
   }
 
