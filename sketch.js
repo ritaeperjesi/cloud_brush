@@ -65,7 +65,7 @@ function keyPressed() {
   if (key === 's') {
     saveCanvas(myDrawing, 'mySky', 'jpg');
   } 
-  else if (key === 'm' ) {
+  else if (key === 't' ) {
     cloudW=cloudW-15;
     cloudH=cloudH-15;
    // image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
@@ -77,7 +77,7 @@ function keyPressed() {
     }
   }
    
-  else if (key === 'p' ) {
+  else if (key === 'b' ) {
     cloudW=cloudW+15;
     cloudH=cloudH+15;
    // image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
