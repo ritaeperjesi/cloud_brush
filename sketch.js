@@ -53,7 +53,7 @@ function setup() {
   cloudArray=[felho1, felho2, felho3, felho4];
 
   plusButton=createButton("+");
-  plusButton.mouseisPressed(biggerBrush);
+//  plusButton.mouseisPressed(biggerBrush);
 }
 function biggerBrush(){
   cloudW=cloudW+30;
