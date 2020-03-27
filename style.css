@@ -1,6 +1,6 @@
 html, canvas {
   display: block;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 head{
   margin-top: 100px;
@@ -11,10 +11,6 @@ head{
 
 body {
  
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
   background-color:#009bff;
   font-family: Helvetica;
   color: #FFF;
