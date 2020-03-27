@@ -56,7 +56,7 @@ function setup() {
   imageMode(CENTER);
   cloudArray=[felho1, felho2, felho3, felho4];
 
-  plusButton=createButton("+");
+//  plusButton=createButton("+");
 //  plusButton.mouseisPressed(biggerBrush);
 }
 function biggerBrush(){
