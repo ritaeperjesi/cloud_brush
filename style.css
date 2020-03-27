@@ -1,5 +1,5 @@
 html, canvas {
-  display: block;
+  display: inline-block;
   margin-left: 50px;
 }
 head{
