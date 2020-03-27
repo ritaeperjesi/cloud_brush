@@ -47,8 +47,8 @@ function setup() {
   strokeWeight(3);
   fill(0,155,255);
   rect (0,0,windowWidth-100,windowHeight-100);
-  cloudW = random(30,75);
-  cloudH = random(30,75);
+  cloudW = random(50,100);
+  cloudH = random(50,100);
   imageMode(CENTER);
   cloudArray=[felho1, felho2, felho3, felho4];
 
@@ -65,8 +65,9 @@ function keyPressed() {
     saveCanvas(myDrawing, 'mySky', 'jpg');
   } 
   else if (key === 'm' ) {
-    cloudW=cloudW+30;
-    cloudH=cloudH+30;
+    cloudW=cloudW-30;
+    cloudH=cloudH-30;
+    image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
     if (cloudH<1){
       cloudH=random(1,20);
     }
