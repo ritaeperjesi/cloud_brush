@@ -1,5 +1,5 @@
 html, canvas {
-  display: inline;
+  display: block;
   margin-left: 50px;
 }
 head{
@@ -11,7 +11,7 @@ body {
   background-color:#009bff;
   font-family: Helvetica;
   color: #FFF;
-  margin-left: -50px;
+  margin-left: -100px;
 }
 
 
