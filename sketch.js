@@ -13,6 +13,7 @@ let cloudArray;
 let index;
 let myDrawing;
 let r;
+let rr;
 
 let smallBrushH;
 let smallBrushW;
@@ -42,14 +43,15 @@ felho2blue=loadImage('cloud_2_blue.png');
 }
 
 function setup() {
-  myDrawing =createCanvas(windowWidth-40,windowHeight-40);
+  myDrawing =createCanvas(windowWidth-100,windowHeight-100);
   background(0,155,255);
   stroke(255);
   strokeWeight(3);
   fill(0,155,255);
   rect (0,0,windowWidth-100,windowHeight-100);
-  cloudW = random(50,100);
-  cloudH = random(50,100);
+  rr=random(50,100);
+  cloudW = rr;
+  cloudH = rr;
   imageMode(CENTER);
   cloudArray=[felho1, felho2, felho3, felho4];
 
@@ -90,8 +92,8 @@ function draw() {
   randomNumber=random(0,100);
   r=random(1,20);
 
-  cloudW = random(50,100);
-  cloudH = random(50,100);
+  rr=random(50,100);
+  
 //smallBrushH=random(20,50);
 //smallBrushW=random(20,50);
 //middleBrushH=random(50,100);
