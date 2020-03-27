@@ -49,9 +49,9 @@ function setup() {
   strokeWeight(3);
   fill(0,155,255);
   rect (0,0,windowWidth-100,windowHeight-100);
-  rr=random(50,100);
-  cloudW = rr;
-  cloudH = rr;
+  
+  cloudW = random(50,100);
+  cloudH = random(50,100);
   imageMode(CENTER);
   cloudArray=[felho1, felho2, felho3, felho4];
 
@@ -91,7 +91,7 @@ function draw() {
   tint(255,c);
   randomNumber=random(0,100);
   r=random(1,20);
-  rr=random(50,100);
+  rr=random(20,50);
   
 //smallBrushH=random(20,50);
 //smallBrushW=random(20,50);
@@ -106,7 +106,7 @@ if (mouseIsPressed){
   if (key === 'd'){
  // cloudW=middleBrushW;
  // cloudH=middleBrushH;  
-  image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
+  image(cloudArray[index], mouseX+1, mouseY+1, cloudW+rr, cloudH+rr);
 }
   }
 
