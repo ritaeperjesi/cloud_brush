@@ -156,5 +156,4 @@ if (mouseIsPressed){
 //  image(felho1, mouseX, mouseY, cloudW, cloudH);
 }
 
-
 }
