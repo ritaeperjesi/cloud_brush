@@ -90,6 +90,8 @@ function draw() {
   randomNumber=random(0,100);
   r=random(1,20);
 
+  cloudW = random(50,100);
+  cloudH = random(50,100);
 //smallBrushH=random(20,50);
 //smallBrushW=random(20,50);
 //middleBrushH=random(50,100);
