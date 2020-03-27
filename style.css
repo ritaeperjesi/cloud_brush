@@ -1,10 +1,12 @@
 html, canvas {
   display: block;
   margin-left: 50px;
+  
 }
+
 head{
   margin-top: 50px;
-  margin-left: 50px;
+  
 }
 
 body {
@@ -13,6 +15,15 @@ body {
   font-family: Helvetica;
   color: #FFF;
  
+}
+a:link, a:visited {
+  text-decoration: none;
+  padding: 14px 25px;
+  text-align: center;
+  background-color: white;
+  color:#009bff;
+  display: inline-block;
+  font-size: 16px;
 }
 
 
