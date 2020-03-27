@@ -65,8 +65,8 @@ function keyPressed() {
     saveCanvas(myDrawing, 'mySky', 'jpg');
   } 
   else if (key === 'm' ) {
-    cloudW=cloudW-30;
-    cloudH=cloudH-30;
+    cloudW=cloudW-15;
+    cloudH=cloudH-15;
     image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
     if (cloudH<1){
       cloudH=random(1,20);
@@ -75,6 +75,10 @@ function keyPressed() {
       cloudW=random(1,20);
     }
   } 
+  else if (key === 'p' ) {
+    cloudW=cloudW+15;
+    cloudH=cloudH+15;
+    image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
   }
 
 function draw() {
