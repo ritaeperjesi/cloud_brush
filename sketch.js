@@ -36,7 +36,7 @@ widget.onUploadComplete(function (fileInfo) {
 
 function preload(){
 felho1=loadImage('cloud_1.png');
-//felho2=loadImage('cloud_2.png');
+felho2=loadImage('cloud_2.png');
 //felho3=loadImage('cloud_3.png');
 //felho4=loadImage('cloud_4.png');
 //felho1blue=loadImage('cloud_1_blue.png');
@@ -101,7 +101,7 @@ function draw() {
 //bigBrushH=random(100,150);
 //bigBrushW=random(100,150);
 //index=int(random(0));
-index=0;
+index=1;
 
 if (mouseIsPressed){
   if (key === 'd'){
