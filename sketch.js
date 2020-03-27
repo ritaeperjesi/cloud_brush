@@ -64,7 +64,7 @@ function keyPressed() {
   if (key === 's') {
     saveCanvas(myDrawing, 'mySky', 'jpg');
   } 
-  if (key === 'm') {
+  else if (key === 'm' ) {
     cloudW=cloudW+30;
     cloudH=cloudH+30;
     if (cloudH<1){
