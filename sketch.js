@@ -74,12 +74,14 @@ function keyPressed() {
     if (cloudW<1){
       cloudW=random(1,20);
     }
-  } 
+  }
+   
   else if (key === 'p' ) {
     cloudW=cloudW+15;
     cloudH=cloudH+15;
     image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
   }
+}
 
 function draw() {
   c=random(0,255)
