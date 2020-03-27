@@ -12,6 +12,7 @@ let c;
 let cloudArray;
 let index;
 let myDrawing;
+let r;
 
 let smallBrushH;
 let smallBrushW;
@@ -69,10 +70,10 @@ function keyPressed() {
     cloudH=cloudH-15;
    // image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
     if (cloudH<1){
-      cloudH=random(1,20);
+      cloudH=r;
     }
     if (cloudW<1){
-      cloudW=random(1,20);
+      cloudW=r;
     }
   }
    
@@ -87,6 +88,7 @@ function draw() {
   c=random(0,255)
   tint(255,c);
   randomNumber=random(0,100);
+  r=random(1,20);
 
 //smallBrushH=random(20,50);
 //smallBrushW=random(20,50);
