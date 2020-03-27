@@ -85,7 +85,7 @@ if (mouseIsPressed){
     if (key === 'p'){
    cloudW=cloudW+30;
    cloudH=cloudH+30;
-   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+   //image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
    }
     }
 /*
