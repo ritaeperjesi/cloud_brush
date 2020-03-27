@@ -67,7 +67,7 @@ function keyPressed() {
   else if (key === 'm' ) {
     cloudW=cloudW-15;
     cloudH=cloudH-15;
-    image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
+   // image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
     if (cloudH<1){
       cloudH=random(1,20);
     }
@@ -79,7 +79,7 @@ function keyPressed() {
   else if (key === 'p' ) {
     cloudW=cloudW+15;
     cloudH=cloudH+15;
-    image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
+   // image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
   }
 }
 
