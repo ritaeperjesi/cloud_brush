@@ -91,7 +91,6 @@ function draw() {
   tint(255,c);
   randomNumber=random(0,100);
   r=random(1,20);
-
   rr=random(50,100);
   
 //smallBrushH=random(20,50);
