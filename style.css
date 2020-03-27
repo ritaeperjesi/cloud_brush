@@ -3,10 +3,7 @@ html, canvas {
   margin-left: 50px;
 }
 head{
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-top: 50px;
 }
 
 body {
@@ -16,10 +13,7 @@ body {
   color: #FFF;
 }
 footer {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-  margin-left: 100px;
+
 }
 
 .w3-responsive{display:block;overflow-x:auto}

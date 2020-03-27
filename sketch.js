@@ -79,7 +79,6 @@ function keyPressed() {
       cloudW=r;
     }
   }
-   
   else if (key === 'b' ) {
     cloudW=cloudW+15;
     cloudH=cloudH+15;
