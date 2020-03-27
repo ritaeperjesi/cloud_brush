@@ -3,7 +3,7 @@ html, canvas {
   margin-left: 50px;
 }
 head{
- 
+  margin-top: 50px;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   background-color:#009bff;
   font-family: Helvetica;
   color: #FFF;
+  margin-left: -50px;
 }
 
 
