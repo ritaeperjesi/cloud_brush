@@ -36,7 +36,7 @@ felho1=loadImage('cloud_1.png');
 //felho2=loadImage('cloud_2.png');
 //felho3=loadImage('cloud_3.png');
 //felho4=loadImage('cloud_4.png');
-felho1blue=loadImage('cloud_1_blue.png');
+//felho1blue=loadImage('cloud_1_blue.png');
 felho2blue=loadImage('cloud_2_blue.png');
 }
 
@@ -64,24 +64,31 @@ function draw() {
   tint(255,c);
   randomNumber=random(0,100);
 
-smallBrushH=random(20,50);
-smallBrushW=random(20,50);
-middleBrushH=random(50,100);
-middleBrushW=random(50,100);
-bigBrushH=random(100,150);
-bigBrushW=random(100,150);
+//smallBrushH=random(20,50);
+//smallBrushW=random(20,50);
+//middleBrushH=random(50,100);
+//middleBrushW=random(50,100);
+//bigBrushH=random(100,150);
+//bigBrushW=random(100,150);
 //index=int(random(0));
 index=0;
 
 if (mouseIsPressed){
   if (key === 'd'){
-  cloudW=middleBrushW;
-  cloudH=middleBrushH;
-  
-image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
+ // cloudW=middleBrushW;
+ // cloudH=middleBrushH;  
+  image(cloudArray[index], mouseX+1, mouseY+1, cloudW, cloudH);
 }
   }
 
+  if (mouseIsPressed){
+    if (key === 'p'){
+   cloudW=cloudW+30;
+   cloudH=cloudH+30;
+   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+   }
+    }
+/*
 if (mouseIsPressed){
   if (key === '1'){
  cloudW=smallBrushW;
@@ -104,11 +111,11 @@ if (mouseIsPressed){
   cloudH=bigBrushH;
   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
   }
-   }
+   }*/
 
  if (mouseIsPressed){
   if (key === 'e'){
-   image(felho1blue, mouseX+1, mouseY+1, cloudW, cloudH);
+   image(felho2blue, mouseX+1, mouseY+1, cloudW, cloudH);
   }
 
 
