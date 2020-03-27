@@ -20,7 +20,7 @@ let middleBrushW;
 let bigBrushH;
 let bigBrushW;
 
-
+let plusButton;
 
 // uploadcare eleje
 var widget = uploadcare.Widget('[role=uploadcare-uploader]');
@@ -46,11 +46,13 @@ function setup() {
   stroke(255);
   strokeWeight(3);
   fill(0,155,255);
-  rect (0,0,windowWidth-40,windowHeight-40);
+  rect (0,0,windowWidth-100,windowHeight-100);
   cloudW = random(30,75);
   cloudH = random(30,75);
   imageMode(CENTER);
   cloudArray=[felho1, felho2, felho3, felho4];
+
+  plusButton=createButton("+");
 }
 
 function keyPressed() {
@@ -81,13 +83,15 @@ if (mouseIsPressed){
 }
   }
 
+  /*
   if (mouseIsPressed){
     if (key === 'p'){
    cloudW=cloudW+30;
    cloudH=cloudH+30;
-   //image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
+   image(felho1, mouseX+1, mouseY+1, cloudW, cloudH);
    }
     }
+    */
 /*
 if (mouseIsPressed){
   if (key === '1'){
